@@ -15,10 +15,10 @@ jobs:
           
       - run: flutter pub get
       
-      # Cria o local.properties com o caminho do Android E do Flutter
+      # Cria o local.properties na raiz do projeto, que é onde o seu Gradle está procurando
       - run: |
-          echo "sdk.dir=$ANDROID_HOME" > android/local.properties
-          echo "flutter.sdk=$(flutter sdk-path)" >> android/local.properties
+          echo "sdk.dir=$ANDROID_HOME" > local.properties
+          echo "flutter.sdk=$(flutter sdk-path)" >> local.properties
       
       # Compila o APK
       - run: flutter build apk --debug

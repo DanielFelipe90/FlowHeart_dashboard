@@ -2,13 +2,13 @@ group 'com.example.admin_dashboard'
 version '1'
 
 buildscript {
-    ext.kotlin_version = '1.9.0'
+    ext.kotlin_version = '1.9.0' // Defina a versão aqui para resolver o erro de $kotlin_version
     repositories {
         google()
         mavenCentral()
     }
-
     dependencies {
+        // Estas dependências são necessárias para os plugins funcionarem
         classpath 'com.android.tools.build:gradle:8.1.0'
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
     }

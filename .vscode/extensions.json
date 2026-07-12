@@ -1,0 +1,23 @@
+{
+  "recommendations": [
+    // Dart & Flutter — sintaxe, autocomplete, debug, refactor
+    "Dart-Code.flutter",
+    "Dart-Code.dart-code",
+
+    // Material Icons para o explorador de arquivos
+    "PKief.material-icon-theme",
+
+    // Erros e warnings inline na linha de código
+    "usernamehw.errorlens",
+
+    // Git avançado
+    "eamodio.gitlens",
+    "mhutchie.git-graph",
+
+    // Comentários destacados
+    "aaron-bond.better-comments",
+
+    // Corretor ortográfico (inglês/português)
+    "streetsidesoftware.code-spell-checker"
+  ]
+}

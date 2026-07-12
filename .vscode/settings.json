@@ -1,0 +1,123 @@
+{
+  // ──────────────────────────────────────────────
+  // Dart / Flutter
+  // ──────────────────────────────────────────────
+  "dart.flutterSdkPath": "/home/vscode/flutter",
+  "dart.sdkPath": "/home/vscode/flutter/bin/cache/dart-sdk",
+  "dart.lineLength": 80,
+  "dart.previewFlutterUiGuides": true,
+  "dart.previewFlutterUiGuidesCustomTracking": true,
+  "dart.debugExternalPackageLibraries": false,
+  "dart.debugSdkLibraries": false,
+  "dart.warnWhenEditingFilesOutsideWorkspace": false,
+  "dart.enableSdkFormatter": true,
+  "dart.showTodos": true,
+  "dart.completeFunctionCalls": true,
+  "dart.renameFilesWithClasses": "always",
+
+  // ──────────────────────────────────────────────
+  // Editor
+  // ──────────────────────────────────────────────
+  "editor.formatOnSave": true,
+  "editor.formatOnType": false,
+  "editor.tabSize": 2,
+  "editor.insertSpaces": true,
+  "editor.rulers": [80],
+  "editor.wordWrap": "off",
+  "editor.minimap.enabled": false,
+  "editor.bracketPairColorization.enabled": true,
+  "editor.guides.bracketPairs": "active",
+  "editor.guides.indentation": true,
+  "editor.inlayHints.enabled": "on",
+  "editor.suggest.preview": true,
+  "editor.quickSuggestionsDelay": 0,
+  "editor.linkedEditing": true,
+  "editor.stickyScroll.enabled": true,
+  "editor.cursorBlinking": "smooth",
+  "editor.smoothScrolling": true,
+  "editor.fontFamily": "'JetBrains Mono', 'Cascadia Code', 'Fira Code', monospace",
+  "editor.fontLigatures": true,
+  "editor.fontSize": 13,
+  "editor.lineHeight": 1.6,
+
+  // ──────────────────────────────────────────────
+  // Dart-specific editor settings
+  // ──────────────────────────────────────────────
+  "[dart]": {
+    "editor.formatOnSave": true,
+    "editor.formatOnType": true,
+    "editor.selectionHighlight": false,
+    "editor.suggest.snippetsPreventQuickSuggestions": false,
+    "editor.suggestSelection": "first",
+    "editor.tabCompletion": "onlySnippets",
+    "editor.wordBasedSuggestions": "off",
+    "editor.defaultFormatter": "Dart-Code.dart-code"
+  },
+
+  // ──────────────────────────────────────────────
+  // Workbench & Icons
+  // ──────────────────────────────────────────────
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.colorTheme": "Dark Modern",
+  "workbench.editor.highlightModifiedTabs": true,
+  "workbench.editor.tabSizing": "shrink",
+  "workbench.startupEditor": "none",
+  "workbench.tree.indent": 16,
+
+  "material-icon-theme.folders.theme": "specific",
+  "material-icon-theme.activeIconPack": "flutter",
+  "material-icon-theme.folders.color": "#90a4ae",
+  "material-icon-theme.opacity": 1,
+  "material-icon-theme.saturation": 1,
+  "material-icon-theme.hidesExplorerArrows": false,
+
+  // ──────────────────────────────────────────────
+  // Files
+  // ──────────────────────────────────────────────
+  "files.associations": {
+    "*.dart": "dart",
+    "pubspec.yaml": "yaml",
+    "*.arb": "json"
+  },
+  "files.exclude": {
+    "**/.dart_tool": true,
+    "**/.flutter-plugins": true,
+    "**/.flutter-plugins-dependencies": true,
+    "**/build": true
+  },
+  "files.watcherExclude": {
+    "**/build/**": true,
+    "**/.dart_tool/**": true
+  },
+  "search.exclude": {
+    "**/.dart_tool": true,
+    "**/build": true,
+    "**/.pub-cache": true
+  },
+
+  // ──────────────────────────────────────────────
+  // Terminal
+  // ──────────────────────────────────────────────
+  "terminal.integrated.defaultProfile.linux": "bash",
+  "terminal.integrated.fontSize": 13,
+  "terminal.integrated.env.linux": {
+    "PATH": "/home/vscode/flutter/bin:/home/vscode/android-sdk/cmdline-tools/latest/bin:/home/vscode/android-sdk/platform-tools:${env:PATH}",
+    "ANDROID_SDK_ROOT": "/home/vscode/android-sdk",
+    "FLUTTER_ROOT": "/home/vscode/flutter"
+  },
+
+  // ──────────────────────────────────────────────
+  // Error Lens
+  // ──────────────────────────────────────────────
+  "errorLens.enabledDiagnosticLevels": ["error", "warning", "info"],
+  "errorLens.gutterIconsEnabled": true,
+  "errorLens.followCursor": "allLines",
+  "errorLens.delay": 200,
+
+  // ──────────────────────────────────────────────
+  // Git
+  // ──────────────────────────────────────────────
+  "git.autofetch": true,
+  "git.confirmSync": false,
+  "gitlens.hovers.currentLine.over": "line"
+}

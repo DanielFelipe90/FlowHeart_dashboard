@@ -73,13 +73,13 @@ class MetricsScreen extends StatelessWidget {
         const SizedBox(height: 28),
 
         // Chart section
-        _SectionLabel(label: 'ATIVIDADE — ÚLTIMAS 12 ATUALIZAÇÕES'),
+        const _SectionLabel(label: 'ATIVIDADE — ÚLTIMAS 12 ATUALIZAÇÕES'),
         const SizedBox(height: 16),
         _ActivityChart(data: metrics.activityData),
         const SizedBox(height: 28),
 
         // Breakdown section
-        _SectionLabel(label: 'DISTRIBUIÇÃO DE USUÁRIOS'),
+        const _SectionLabel(label: 'DISTRIBUIÇÃO DE USUÁRIOS'),
         const SizedBox(height: 16),
         _UserDistributionBar(
           active: users.activeUsers,
@@ -227,7 +227,7 @@ class _ActivityChart extends StatelessWidget {
             show: true,
             drawVerticalLine: false,
             horizontalInterval: 20,
-            getDrawingHorizontalLine: (_) => FlLine(
+            getDrawingHorizontalLine: (_) => const FlLine(
               color: AppTheme.border,
               strokeWidth: 1,
             ),

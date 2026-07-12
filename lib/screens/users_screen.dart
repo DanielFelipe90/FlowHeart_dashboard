@@ -251,15 +251,15 @@ class _UsersScreenState extends State<UsersScreen> {
             ),
           )
         else if (users.isEmpty)
-          Expanded(
+          const Expanded(
             child: Center(
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   Icon(Icons.person_search_outlined,
                       color: AppTheme.whiteDisabled, size: 40),
-                  const SizedBox(height: 12),
-                  const Text(
+                  SizedBox(height: 12),
+                  Text(
                     'Nenhum usuário encontrado',
                     style: TextStyle(
                         color: AppTheme.whiteSubtle, fontSize: 13),

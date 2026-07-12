@@ -203,7 +203,7 @@ class _LoginScreenState extends State<LoginScreen>
                     const SizedBox(height: 20),
 
                     // Hint
-                    Center(
+                    const Center(
                       child: Text(
                         'Demo: admin@admin.com / admin123',
                         style: TextStyle(

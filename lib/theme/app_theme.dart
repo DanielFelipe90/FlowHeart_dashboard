@@ -20,11 +20,9 @@ class AppTheme {
       brightness: Brightness.dark,
       scaffoldBackgroundColor: background,
       colorScheme: const ColorScheme.dark(
-        background: background,
         surface: surface,
         primary: white,
         secondary: white,
-        onBackground: white,
         onSurface: white,
         outline: border,
       ),

@@ -26,10 +26,10 @@ class _StatusScreenState extends State<StatusScreen> {
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
-              Column(
+              const Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  const Text(
+                  Text(
                     'Status dos Serviços',
                     style: TextStyle(
                       color: AppTheme.white,
@@ -37,7 +37,7 @@ class _StatusScreenState extends State<StatusScreen> {
                       fontWeight: FontWeight.w500,
                     ),
                   ),
-                  const SizedBox(height: 4),
+                  SizedBox(height: 4),
                   Text(
                     'Última verificação agora',
                     style: TextStyle(
@@ -68,14 +68,14 @@ class _StatusScreenState extends State<StatusScreen> {
           ),
 
           const SizedBox(height: 24),
-          _SectionDivider(label: 'INFORMAÇÕES DO SISTEMA'),
+          const _SectionDivider(label: 'INFORMAÇÕES DO SISTEMA'),
           const SizedBox(height: 16),
 
           // Info rows
-          _InfoRow(label: 'Versão do App', value: 'v1.0.0'),
-          _InfoRow(label: 'Ambiente', value: 'Production'),
-          _InfoRow(label: 'Região', value: 'sa-east-1'),
-          _InfoRow(label: 'Uptime', value: '14d 7h 23m'),
+          const _InfoRow(label: 'Versão do App', value: 'v1.0.0'),
+          const _InfoRow(label: 'Ambiente', value: 'Production'),
+          const _InfoRow(label: 'Região', value: 'sa-east-1'),
+          const _InfoRow(label: 'Uptime', value: '14d 7h 23m'),
           const SizedBox(height: 40),
         ],
       ),

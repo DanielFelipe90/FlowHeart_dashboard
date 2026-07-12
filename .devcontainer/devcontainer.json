@@ -18,9 +18,9 @@
         "PKief.material-icon-theme",
         "usernamehw.errorlens",
         "eamodio.gitlens",
-        "streetsidesoftware.code-spell-checker",
         "mhutchie.git-graph",
-        "aaron-bond.better-comments"
+        "aaron-bond.better-comments",
+        "streetsidesoftware.code-spell-checker"
       ],
       "settings": {
         "dart.flutterSdkPath": "/home/vscode/flutter",
@@ -30,23 +30,18 @@
         "dart.previewFlutterUiGuidesCustomTracking": true,
         "dart.debugExternalPackageLibraries": false,
         "dart.debugSdkLibraries": false,
-        "dart.warnWhenEditingFilesOutsideWorkspace": false,
+        "dart.completeFunctionCalls": true,
+        "dart.enableSdkFormatter": true,
 
         "workbench.iconTheme": "material-icon-theme",
-        "material-icon-theme.folders.theme": "specific",
         "material-icon-theme.activeIconPack": "flutter",
 
         "editor.formatOnSave": true,
-        "editor.formatOnType": false,
         "editor.tabSize": 2,
-        "editor.insertSpaces": true,
         "editor.rulers": [80],
-        "editor.wordWrap": "off",
-        "editor.minimap.enabled": false,
         "editor.bracketPairColorization.enabled": true,
         "editor.guides.bracketPairs": "active",
         "editor.inlayHints.enabled": "on",
-        "editor.suggest.preview": true,
         "editor.quickSuggestionsDelay": 0,
 
         "[dart]": {
@@ -60,38 +55,26 @@
           "editor.defaultFormatter": "Dart-Code.dart-code"
         },
 
-        "files.associations": {
-          "*.dart": "dart"
-        },
         "files.exclude": {
           "**/.dart_tool": true,
           "**/.flutter-plugins": true,
           "**/.flutter-plugins-dependencies": true,
           "**/build": true
         },
-        "search.exclude": {
-          "**/.dart_tool": true,
-          "**/build": true,
-          "**/.pub-cache": true
-        },
 
         "terminal.integrated.defaultProfile.linux": "bash",
         "terminal.integrated.env.linux": {
-          "PATH": "/home/vscode/flutter/bin:/home/vscode/android-sdk/cmdline-tools/latest/bin:/home/vscode/android-sdk/platform-tools:${env:PATH}",
+          "JAVA_HOME": "/usr/lib/jvm/msopenjdk-17-amd64",
+          "FLUTTER_ROOT": "/home/vscode/flutter",
           "ANDROID_SDK_ROOT": "/home/vscode/android-sdk",
-          "FLUTTER_ROOT": "/home/vscode/flutter"
-        }
+          "PATH": "/home/vscode/flutter/bin:/home/vscode/android-sdk/cmdline-tools/latest/bin:/home/vscode/android-sdk/platform-tools:${env:PATH}"
+        },
+
+        "errorLens.enabledDiagnosticLevels": ["error", "warning", "info"],
+        "errorLens.gutterIconsEnabled": true
       }
     }
   },
-  "postCreateCommand": "bash .devcontainer/post-create.sh",
-  "postStartCommand": "bash .devcontainer/post-start.sh",
-  "remoteUser": "vscode",
-  "mounts": [
-    "source=flutter-pub-cache,target=/home/vscode/.pub-cache,type=volume",
-    "source=flutter-sdk-cache,target=/home/vscode/flutter,type=volume",
-    "source=android-sdk-cache,target=/home/vscode/android-sdk,type=volume"
-  ],
-  "forwardPorts": [],
-  "portsAttributes": {}
+  "postCreateCommand": "bash .devcontainer/setup.sh",
+  "remoteUser": "vscode"
 }

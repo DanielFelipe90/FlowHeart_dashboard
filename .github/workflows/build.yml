@@ -8,11 +8,21 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+      
       - uses: subosito/flutter-action@v2
         with:
           channel: 'stable'
+          
       - run: flutter pub get
+      
+      # Cria o local.properties usando o caminho do SDK do servidor do GitHub
+      - run: |
+          echo "sdk.dir=$ANDROID_HOME" > local.properties
+          echo "sdk.dir=$ANDROID_HOME" > android/local.properties
+      
+      # Compila o APK
       - run: flutter build apk --debug
+      
       - uses: actions/upload-artifact@v4
         with:
           name: app-debug
